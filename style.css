@@ -50,7 +50,7 @@ nav{
     height: 0.188rem;
     background-color: #fff;
     border-radius: 0.625rem;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.4s;
 }
 
 @media screen and (max-width: 700px) {
@@ -270,7 +270,7 @@ nav .fa{
  .grid{
     padding: 15px;
     border-radius: 5px;
-    height: 330px;
+    height: 387px;
     width: 200px;
     background-color: rgb(222, 231, 248);
     transition: 0.5s;
@@ -281,7 +281,7 @@ nav .fa{
  .grid > a > .hero-btn{
 
     background-color:  rgb(160, 186, 238);
-    margin-left: 70px;
+    margin-left: 33%;
     padding: 5px 15px;
     border-radius: 5px;
  }
@@ -295,7 +295,7 @@ nav .fa{
     border-radius: 50px;
     height: 60px;
     width: 60px;
-    margin-left: 65px;
+    margin-left: 33%;
     margin-top: 20px;
  }
  .fa-lightbulb-o{
@@ -569,10 +569,7 @@ nav .fa{
 .facheader{
     font-size: 32px;
 }
-.facilities-col3 > img{
-    width: 30px;
-    height: 50px;
-}
+
 .facilities2{
     width: 80%;
     margin: auto;
@@ -610,7 +607,6 @@ nav .fa{
     text-align: left;
 }
 .facilities-col3 img{
-    height: 280px;
     width: 100%;
     border-radius: 10px;
 }
