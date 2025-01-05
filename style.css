@@ -28,6 +28,11 @@ html{
     height: 80px;
     border-radius: 49%;
 }
+@media (max-width: 700px){
+    .header img{
+        margin-bottom: 20px;
+    }
+}
 nav{
     display: flex;
     padding: 2% 6%;
