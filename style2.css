@@ -1,9 +1,13 @@
 *{
+    box-sizing: border-box;
     padding: 0%;
     margin: 0;
 }
 html{
     font-family: "poppins", sans-serif;
+}
+.over{
+    overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -35,6 +39,7 @@ nav{
         display: flex;
         right: 2rem;
         top: 3rem;
+        transition: 2s;
     }
     nav{
         flex-direction: column;
@@ -131,13 +136,13 @@ nav .fa{
     .nav-links ul {
         display: inline-flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 65px 14px;
     }
     .nav-links{
         position: absolute;
         width: 200px;
         right: -200px;
-        background: rgba(30, 25, 25, 0.77);
+        background-color: rgba(30, 25, 25, 0.77);
         height: 100vh;
         text-align: left;
         top: 0%;
@@ -156,18 +161,17 @@ nav .fa{
     .nav_hamburger.active :nth-child(3){
         transform:  rotate(-45deg) translate(0.45rem, -0.1875rem);
     }
-    nav .fa{
-        display: block;
-        color: #fff;
-        cursor: pointer;
-        margin: 10px;
-        font-size: 22px;
+    .nav_hamburger.active{
+        top: 2rem;
+        transition: 2s;
+        
     } 
 }
 .dub-header{
-    height: 15vh;
+    height: auto;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aboutpic.JPG);
+    filter: brightness(100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -186,6 +190,8 @@ nav .fa{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    z-index: auto;
+    overflow: hidden;
 }
 @media(max-width: 700px){
     .dontainer{
@@ -203,7 +209,7 @@ nav .fa{
     margin: 10px;
     border-radius: 50px;
     border: goldenrod 3px solid;
-    position: relative;
+    position: inherit;
     background-image: url(images/OMU\ RESORT.jpg);
     background-size: 100% 100%;
     background-position: center;
@@ -218,7 +224,8 @@ nav .fa{
 }
 .sidepic span{
 color: #fff;
-position: absolute;
+position: relative;
+top: 13rem;
 bottom: 20px;
 left: 30px;
 opacity: 1;
@@ -230,7 +237,7 @@ height: 250px;
 margin: 10px;
 border-radius: 50px;
 border: goldenrod 3px solid;
-position: relative;
+position: inherit;
 background-image: url(images/school\ library.jpg);
 background-size: 100% 100%;
 background-position: center;
@@ -245,7 +252,8 @@ background-position: center;
 }
 .another span{
 color: #fff;
-position: absolute;
+position: relative;
+top: 13rem;
 bottom: 20px;
 left: 30px;
 opacity: 1;
